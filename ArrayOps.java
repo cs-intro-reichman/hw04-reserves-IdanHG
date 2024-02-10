@@ -14,7 +14,7 @@ public class ArrayOps {
 
     /*
     finds a missing integer in an array that contains every integer between 0
-    and the kength of the array - except fot one.
+    and the kength of the array - except for one.
      */  
     public static int findMissingInt (int [] array) {
         int n = array.length;
@@ -41,24 +41,7 @@ public class ArrayOps {
         }
         return secondMax;
     }
-
-        /* int max = max(array);
-        int min = min(array);
-        int diff = max - min;
-        int checker = 0; //checks if a number is in the array
-        int maxCounter = 0; //says how many timmes maximunm appears maximum appers in the array;
-        //loop to if max appears more than once. if yes - return max.
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == max) maxCounter++;
-            if (maxCounter > 1) return max;
-        }
-        //loop to find second max in case max appears once.
-        for (int i = 1 ; i <= diff; i++) {
-            checker = max - (i);
-            if (contains(array, checker)) return checker;
-        }
-       return -1; */
-    
+  
     //checks if to arrays contain the same elements
     public static boolean containsTheSameElements(int [] array1,int [] array2) {
         boolean same = true;
