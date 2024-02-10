@@ -25,7 +25,18 @@ public class ArrayOps {
     }
 
     public static int secondMaxValue(int [] array) {
-        int max = max(array);
+        int max, secondMax = 0;
+        max = array[0];
+        for (int i = 1; i< array.length; i++) {
+            if (array[i] >= max){
+                secondMax = max;
+                max = array[i];
+            }
+        }
+        return secondMax;
+    }
+
+        /* int max = max(array);
         int min = min(array);
         int diff = max - min;
         int checker = 0; //checks if a number is in the array
@@ -40,8 +51,8 @@ public class ArrayOps {
             checker = max - (i);
             if (contains(array, checker)) return checker;
         }
-       return -1;
-    }
+       return -1; */
+    
     //checks if to arrays contain the same elements
     public static boolean containsTheSameElements(int [] array1,int [] array2) {
         boolean same = true;
